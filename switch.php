@@ -1,5 +1,8 @@
 <?php
 
+// The switch statement is used to perform different actions based on different conditions.
+
+
 $favcolor = "red";
 
 switch ($favcolor) {
@@ -15,3 +18,7 @@ switch ($favcolor) {
   default:
     echo "Your favorite color is neither red, blue, nor green!";
 }
+
+
+// When PHP reaches a 'break' keywork, it breaks out of the switch block.
+// If no cases get a match, the default block is executed:
