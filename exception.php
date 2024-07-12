@@ -14,4 +14,3 @@ try {
 }
 
 echo "Hello World\n";
-?>
