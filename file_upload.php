@@ -1,7 +1,8 @@
 <?php
-if(isset($POST['submit'])){
-    if(empty($_FILES['upload']['namr'])) {
-
+if(isset($_POST['submit'])){
+    if(!empty($_FILES['upload']['name'])) {
+        print_r($_FILES);
+        $file_name = $FILES['upload']['name'];
     } else{
         $message = '<p style="color: blue;">Please choose a file</p>';
     }
@@ -17,9 +18,8 @@ if(isset($POST['submit'])){
     <title>Document</title>
 </head>
 <body>
-    
     <?php echo $message ?? null; ?>
-
+    
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>"
     method="POST" enctype="multipart/form-data">
     select image to upload:
