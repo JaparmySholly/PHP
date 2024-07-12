@@ -13,6 +13,5 @@ try {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
 }
 
-// Continue execution
 echo "Hello World\n";
 ?>
