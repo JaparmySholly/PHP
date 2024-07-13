@@ -18,4 +18,4 @@ $people = [
     ],
 ];
 
-echo $people[1]['email'];
+echo $people[2]['email'];
