@@ -35,6 +35,24 @@ class User{
 $user1 = new User('Sholly', 'sholly@gmail.com', '12345');
 $user2 = new User('Japarmy', 'japarmygmail.com', '67890');
 
-echo $user1->email;
-echo $user2->name;
+// echo $user1->email;
+// echo $user2->name;
 
+
+// Inheritance
+
+class Employee extends User{
+    public function __construct( $name, $email, $password, $title){
+        parent::__construct($name, $email, $password);
+        $this->title = $title;
+    }
+    
+    public function get_title(){
+        return $this->title;
+    }
+        
+    }
+
+    $employ1 = new Employee('Lizzy','lizzy@gmail.com', '12345', 'Manager');
+
+    echo $employ1->get_title();
