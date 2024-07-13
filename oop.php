@@ -15,8 +15,10 @@ class User{
     public $password;
 
     // A constructor is a method that runs when an object is created
-    public function __construct() {
+    public function __construct($name, $email, $password) {
         $this->name = "$name";
+        $this->email = $email;
+        $this->password = $password;
     }
 
     function set_name($name){
@@ -30,8 +32,9 @@ class User{
 
 // Instatiate a user objects
 
-$user1 = new User();
+$user1 = new User('Sholly', 'sholly@gmail.com', '12345');
+$user2 = new User('Japarmy', 'japarmygmail.com', '67890');
 
-// $user1=>name = 'Sholly';
+echo $user1->email;
+echo $user2->name;
 
-var_dump($user1);
