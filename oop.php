@@ -13,12 +13,25 @@ class User{
     public $name;
     public $email;
     public $password;
+
+    // A constructor is a method that runs when an object is created
+    public function __construct() {
+        $this->name = "$name";
+    }
+
+    function set_name($name){
+        $this->name = $name;
+    }
+
+    function get_name(){
+        return $this->name;
+    }
 }
 
 // Instatiate a user objects
 
 $user1 = new User();
 
-$user1=>name = 'Sholly';
+// $user1=>name = 'Sholly';
 
 var_dump($user1);
