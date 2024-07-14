@@ -21,7 +21,7 @@
      $email = filter_input(INPUT_POST,'email', FILTER_SANITIZE_EMAIL);
     }
 
-    //validating body
+    //validate body
     if(empty($_POST['body'])) {
       $bodyErr = 'Body is required';
      } else {
